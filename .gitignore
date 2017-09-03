@@ -1,2 +1,3 @@
 /_generator/BookGenerator/**/bin/
 /_generator/BookGenerator/**/obj/
+*.suo
