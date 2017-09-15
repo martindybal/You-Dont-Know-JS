@@ -59,13 +59,30 @@ namespace BookGenerator.App
 
             var bookOutputFolderFullPath = Path.Combine(projectFolderFullPath, "_generated_books", bookFolder);
             var bookFullPath = Path.Combine(bookOutputFolderFullPath, $"_{bookFolder}.md");
-            File.WriteAllText(bookFullPath, bookContent.ToString());
+
+            CreateDirectoryIfNotExist(bookFullPath);
+            SaveBook(bookFullPath, bookContent.ToString());
+            CopyImagesToBookFolder(bookInputFolderFullPath);
+        }
+
+        private static void CreateDirectoryIfNotExist(string bookFullPath)
+        {
+            FileInfo bookFile = new FileInfo(bookFullPath);
+            bookFile.Directory.Create(); // If the directory already exists, this method does nothing.
+        }
+
+        private static void SaveBook(string bookFullPath, string bookContent)
+        {
+            File.WriteAllText(bookFullPath, bookFullPath);
+        }
+
+        private static void CopyImagesToBookFolder(string bookInputFolderFullPath)
+        {
+            var imageExtensions = new[] { "png", "jpg", "jpeg"};
 
             var imagesFilesInBookFolder = Directory.EnumerateFiles(bookInputFolderFullPath)
-                                                   .Select(fileName => new FileInfo(fileName))
-                                                   .Where(file => file.Extension == "png" ||
-                                                                  file.Extension == "jpg" ||
-                                                                  file.Extension == "jpeg");
+                .Select(fileName => new FileInfo(fileName))
+                .Where(file => imageExtensions.Contains(file.Extension));
 
             foreach (var imageFile in imagesFilesInBookFolder)
             {
