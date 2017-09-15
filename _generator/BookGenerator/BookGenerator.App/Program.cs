@@ -62,7 +62,7 @@ namespace BookGenerator.App
 
             CreateDirectoryIfNotExist(bookFullPath);
             SaveBook(bookFullPath, bookContent.ToString());
-            CopyImagesToBookFolder(bookInputFolderFullPath);
+            CopyImagesToBookFolder(bookInputFolderFullPath, bookOutputFolderFullPath);
         }
 
         private static void CreateDirectoryIfNotExist(string bookFullPath)
@@ -73,20 +73,20 @@ namespace BookGenerator.App
 
         private static void SaveBook(string bookFullPath, string bookContent)
         {
-            File.WriteAllText(bookFullPath, bookFullPath);
+            File.WriteAllText(bookFullPath, bookContent);
         }
 
-        private static void CopyImagesToBookFolder(string bookInputFolderFullPath)
+        private static void CopyImagesToBookFolder(string inputFolderFullPath, string outputFolderFullPath)
         {
-            var imageExtensions = new[] { "png", "jpg", "jpeg"};
+            var imageExtensions = new[] { ".png", ".jpg", ".jpeg"};
 
-            var imagesFilesInBookFolder = Directory.EnumerateFiles(bookInputFolderFullPath)
+            var imagesFilesInBookFolder = Directory.EnumerateFiles(inputFolderFullPath)
                 .Select(fileName => new FileInfo(fileName))
                 .Where(file => imageExtensions.Contains(file.Extension));
 
             foreach (var imageFile in imagesFilesInBookFolder)
             {
-                File.Copy(imageFile.FullName, Path.Combine(bookInputFolderFullPath, imageFile.Name));
+                File.Copy(imageFile.FullName, Path.Combine(outputFolderFullPath, imageFile.Name));
             }
         }
     }
