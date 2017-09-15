@@ -23,40 +23,40 @@
 
 ## Table of Contents
 
-* Foreword
-* Preface
-* Chapter 1: Types
-	* A Type By Any Other Name...
-	* Built-in Types
-	* Values as Types
-* Chapter 2: Values
-	* Arrays
-	* Strings
-	* Numbers
-	* Special Values
-	* Value vs Reference
-* Chapter 3: Natives
-	* Internal `[[Class]]`
-	* Boxing Wrappers
-	* Unboxing
-	* Natives as Constructors
-* Chapter 4: Coercion
-	* Converting Values
-	* Abstract Value Operations
-	* Explicit Coercion
-	* Implicit Coercion
-	* Loose Equals vs Strict Equals
-	* Abstract Relational Comparison
-* Chapter 5: Grammar
-	* Statements & Expressions
-	* Operator Precedence
-	* Automatic Semicolons
-	* Errors
-	* Function Arguments
-	* `try..finally`
-	* `switch`
-* Appendix A: Mixed Environment JavaScript
-* Appendix B: Acknowledgments
+* [Foreword](#Foreword)
+* [Preface](#Preface)
+* [Chapter 1: Types](#Chapter-1:-Types)
+	* [A Type By Any Other Name...](##A-Type-By-Any-Other-Name...)
+	* [Built-in Types](##Built-in-Types)
+	* [Values as Types](##Values-as-Types)
+* [Chapter 2: Values](#Chapter-2:-Values)
+	* [Arrays](##Arrays)
+	* [Strings](##Strings)
+	* [Numbers](##Numbers)
+	* [Special Values](##Special-Values)
+	* [Value vs Reference](##Value-vs-Reference)
+* [Chapter 3: Natives](#Chapter-3:-Natives)
+	* [Internal `[[Class]]`](##Internal-`[[Class]]`)
+	* [Boxing Wrappers](##Boxing-Wrappers)
+	* [Unboxing](##Unboxing)
+	* [Natives as Constructors](##Natives-as-Constructors)
+* [Chapter 4: Coercion](#Chapter-4:-Coercion)
+	* [Converting Values](##Converting-Values)
+	* [Abstract Value Operations](##Abstract-Value-Operations)
+	* [Explicit Coercion](##Explicit-Coercion)
+	* [Implicit Coercion](##Implicit-Coercion)
+	* [Loose Equals vs Strict Equals](##Loose-Equals-vs-Strict-Equals)
+	* [Abstract Relational Comparison](##Abstract-Relational-Comparison)
+* [Chapter 5: Grammar](#Chapter-5:-Grammar)
+	* [Statements & Expressions](##Statements-&-Expressions)
+	* [Operator Precedence](##Operator-Precedence)
+	* [Automatic Semicolons](##Automatic-Semicolons)
+	* [Errors](##Errors)
+	* [Function Arguments](##Function-Arguments)
+	* [`try..finally`](##`try..finally`)
+	* [`switch`](##`switch`)
+* [Appendix A: Mixed Environment JavaScript](#Appendix-A:-Mixed-Environment-JavaScript)
+* [Appendix B: Acknowledgments](#Appendix-B:-Acknowledgments)
 
 # You Don't Know JS: Types & Grammar
 # Chapter 1: Types

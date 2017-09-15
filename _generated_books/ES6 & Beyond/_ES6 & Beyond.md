@@ -25,60 +25,60 @@
 
 ## Table of Contents
 
-* Foreword
-* Preface
-* Chapter 1: ES? Now & Future
-	* Versioning
-	* Transpiling
-* Chapter 2: Syntax
-	* Block-Scoped Declarations
-	* Spread / Rest
-	* Default Parameter Values
-	* Destructuring
-	* Object Literal Extensions
-	* Template Literals
-	* Arrow Functions
-	* `for..of` Loops
-	* Regular Expression Extensions
-	* Number Literal Extensions
-	* Unicode
-	* Symbols
-* Chapter 3: Organization
-	* Iterators
-	* Generators
-	* Modules
-	* Classes
-* Chapter 4: Async Flow Control
-	* Promises
-	* Generators + Promises
-* Chapter 5: Collections
-	* TypedArrays
-	* Maps
-	* WeakMaps
-	* Sets
-	* WeakSets
-* Chapter 6: API Additions
-	* `Array`
-	* `Object`
-	* `Math`
-	* `Number`
-	* `String`
-* Chapter 7: Meta Programming
-	* Function Names
-	* Meta Properties
-	* Well Known Symbols
-	* Proxies
-	* `Reflect` API
-	* Feature Testing
-	* Tail Call Optimization (TCO)
-* Chapter 8: Beyond ES6
-	* `async function`s
-	* `Object.observe(..)`
-	* Exponentiation Operator
-	* Object Properties and `...`
-	* `Array#includes(..)`
-	* SIMD
-* Appendix A: Acknowledgments
+* [Foreword](#Foreword)
+* [Preface](#Preface)
+* [Chapter 1: ES? Now & Future](#Chapter-1:-ES?-Now-&-Future)
+	* [Versioning](##Versioning)
+	* [Transpiling](##Transpiling)
+* [Chapter 2: Syntax](#Chapter-2:-Syntax)
+	* [Block-Scoped Declarations](##Block-Scoped-Declarations)
+	* [Spread / Rest](##Spread-/-Rest)
+	* [Default Parameter Values](##Default-Parameter-Values)
+	* [Destructuring](##Destructuring)
+	* [Object Literal Extensions](##Object-Literal-Extensions)
+	* [Template Literals](##Template-Literals)
+	* [Arrow Functions](##Arrow-Functions)
+	* [`for..of` Loops](##`for..of`-Loops)
+	* [Regular Expression Extensions](##Regular-Expression-Extensions)
+	* [Number Literal Extensions](##Number-Literal-Extensions)
+	* [Unicode](##Unicode)
+	* [Symbols](##Symbols)
+* [Chapter 3: Organization](#Chapter-3:-Organization)
+	* [Iterators](##Iterators)
+	* [Generators](##Generators)
+	* [Modules](##Modules)
+	* [Classes](##Classes)
+* [Chapter 4: Async Flow Control](#Chapter-4:-Async-Flow-Control)
+	* [Promises](##Promises)
+	* [Generators + Promises](##Generators-+-Promises)
+* [Chapter 5: Collections](#Chapter-5:-Collections)
+	* [TypedArrays](##TypedArrays)
+	* [Maps](##Maps)
+	* [WeakMaps](##WeakMaps)
+	* [Sets](##Sets)
+	* [WeakSets](##WeakSets)
+* [Chapter 6: API Additions](#Chapter-6:-API-Additions)
+	* [`Array`](##`Array`)
+	* [`Object`](##`Object`)
+	* [`Math`](##`Math`)
+	* [`Number`](##`Number`)
+	* [`String`](##`String`)
+* [Chapter 7: Meta Programming](#Chapter-7:-Meta-Programming)
+	* [Function Names](##Function-Names)
+	* [Meta Properties](##Meta-Properties)
+	* [Well Known Symbols](##Well-Known-Symbols)
+	* [Proxies](##Proxies)
+	* [`Reflect` API](##`Reflect`-API)
+	* [Feature Testing](##Feature-Testing)
+	* [Tail Call Optimization (TCO)](##Tail-Call-Optimization-(TCO))
+* [Chapter 8: Beyond ES6](#Chapter-8:-Beyond-ES6)
+	* [`async function`s](##`async-function`s)
+	* [`Object.observe(..)`](##`Object.observe(..)`)
+	* [Exponentiation Operator](##Exponentiation-Operator)
+	* [Object Properties and `...`](##Object-Properties-and-`...`)
+	* [`Array#includes(..)`](##`Array#includes(..)`)
+	* [SIMD](##SIMD)
+* [Appendix A: Acknowledgments](#Appendix-A:-Acknowledgments)
 # You Don't Know JS: ES6 & Beyond
 # Chapter 1: ES? Now & Future
 

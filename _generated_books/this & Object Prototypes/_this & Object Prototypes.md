@@ -24,41 +24,41 @@
 
 ## Table of Contents
 
-* Foreword
-* Preface
-* Chapter 1: `this` Or That?
-	* Why `this`?
-	* Confusions
-	* What's `this`?
-* Chapter 2: `this` All Makes Sense Now!
-	* Call-site
-	* Nothing But Rules
-	* Everything In Order
-	* Binding Exceptions
-	* Lexical `this`
-* Chapter 3: Objects
-	* Syntax
-	* Type
-	* Contents
-	* Iteration
-* Chapter 4: Mixing (Up) "Class" Objects
-	* Class Theory
-	* Class Mechanics
-	* Class Inheritance
-	* Mixins
-* Chapter 5: Prototypes
-	* `[[Prototype]]`
-	* "Class"
-	* "(Prototypal) Inheritance"
-	* Object Links
-* Chapter 6: Behavior Delegation
-	* Towards Delegation-Oriented Design
-	* Classes vs. Objects
-	* Simpler Design
-	* Nicer Syntax
-	* Introspection
-* Appendix A: ES6 `class`
-* Appendix B: Acknowledgments
+* [Foreword](#Foreword)
+* [Preface](#Preface)
+* [Chapter 1: `this` Or That?](#Chapter-1:-`this`-Or-That?)
+	* [Why `this`?](##Why-`this`?)
+	* [Confusions](##Confusions)
+	* [What's `this`?](##What's-`this`?)
+* [Chapter 2: `this` All Makes Sense Now!](#Chapter-2:-`this`-All-Makes-Sense-Now!)
+	* [Call-site](##Call-site)
+	* [Nothing But Rules](##Nothing-But-Rules)
+	* [Everything In Order](##Everything-In-Order)
+	* [Binding Exceptions](##Binding-Exceptions)
+	* [Lexical `this`](##Lexical-`this`)
+* [Chapter 3: Objects](#Chapter-3:-Objects)
+	* [Syntax](##Syntax)
+	* [Type](##Type)
+	* [Contents](##Contents)
+	* [Iteration](##Iteration)
+* [Chapter 4: Mixing (Up) "Class" Objects](#Chapter-4:-Mixing-(Up)-"Class"-Objects)
+	* [Class Theory](##Class-Theory)
+	* [Class Mechanics](##Class-Mechanics)
+	* [Class Inheritance](##Class-Inheritance)
+	* [Mixins](##Mixins)
+* [Chapter 5: Prototypes](#Chapter-5:-Prototypes)
+	* [`[[Prototype]]`](##`[[Prototype]]`)
+	* ["Class"](##"Class")
+	* ["(Prototypal) Inheritance"](##"(Prototypal)-Inheritance")
+	* [Object Links](##Object-Links)
+* [Chapter 6: Behavior Delegation](#Chapter-6:-Behavior-Delegation)
+	* [Towards Delegation-Oriented Design](##Towards-Delegation-Oriented-Design)
+	* [Classes vs. Objects](##Classes-vs.-Objects)
+	* [Simpler Design](##Simpler-Design)
+	* [Nicer Syntax](##Nicer-Syntax)
+	* [Introspection](##Introspection)
+* [Appendix A: ES6 `class`](#Appendix-A:-ES6-`class`)
+* [Appendix B: Acknowledgments](#Appendix-B:-Acknowledgments)
 
 # You Don't Know JS: *this* & Object Prototypes
 # Chapter 1: `this` Or That?

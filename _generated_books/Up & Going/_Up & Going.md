@@ -20,37 +20,37 @@
 
 ## Table of Contents
 
-* Foreword
-* Preface
-* Chapter 1: Into Programming
-	* Code
-	* Try It Yourself
-	* Operators
-	* Values & Types
-	* Code Comments
-	* Variables
-	* Blocks
-	* Conditionals
-	* Loops
-	* Functions
-	* Practice
-* Chapter 2: Into JavaScript
-	* Values & Types
-	* Variables
-	* Conditionals
-	* Strict Mode
-	* Functions As Values
-	* `this` Keyword
-	* Prototypes
-	* Old & New
-	* Non-JavaScript
-* Chapter 3: Into YDKJS
-	* Scope & Closures
-	* this & Object Prototypes
-	* Types & Grammar
-	* Async & Performance
-	* ES6 & Beyond
-* Appendix A: Acknowledgments
+* [Foreword](#Foreword)
+* [Preface](#Preface)
+* [Chapter 1: Into Programming](#Chapter-1:-Into-Programming)
+	* [Code](##Code)
+	* [Try It Yourself](##Try-It-Yourself)
+	* [Operators](##Operators)
+	* [Values & Types](##Values-&-Types)
+	* [Code Comments](##Code-Comments)
+	* [Variables](##Variables)
+	* [Blocks](##Blocks)
+	* [Conditionals](##Conditionals)
+	* [Loops](##Loops)
+	* [Functions](##Functions)
+	* [Practice](##Practice)
+* [Chapter 2: Into JavaScript](#Chapter-2:-Into-JavaScript)
+	* [Values & Types](##Values-&-Types)
+	* [Variables](##Variables)
+	* [Conditionals](##Conditionals)
+	* [Strict Mode](##Strict-Mode)
+	* [Functions As Values](##Functions-As-Values)
+	* [`this` Keyword](##`this`-Keyword)
+	* [Prototypes](##Prototypes)
+	* [Old & New](##Old-&-New)
+	* [Non-JavaScript](##Non-JavaScript)
+* [Chapter 3: Into YDKJS](#Chapter-3:-Into-YDKJS)
+	* [Scope & Closures](##Scope-&-Closures)
+	* [this & Object Prototypes](##this-&-Object-Prototypes)
+	* [Types & Grammar](##Types-&-Grammar)
+	* [Async & Performance](##Async-&-Performance)
+	* [ES6 & Beyond](##ES6-&-Beyond)
+* [Appendix A: Acknowledgments](#Appendix-A:-Acknowledgments)
 # You Don't Know JS: Up & Going
 # Chapter 1: Into Programming
 

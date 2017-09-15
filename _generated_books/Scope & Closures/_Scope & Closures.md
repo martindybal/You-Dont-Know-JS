@@ -25,35 +25,35 @@
 
 ## Table of Contents
 
-* Foreword
-* Preface
-* Chapter 1: What is Scope?
-	* Compiler Theory
-	* Understanding Scope
-	* Nested Scope
-	* Errors
-* Chapter 2: Lexical Scope
-	* Lex-time
-	* Cheating Lexical
-* Chapter 3: Function vs. Block Scope
-	* Scope From Functions
-	* Hiding In Plain Scope
-	* Functions As Scopes
-	* Blocks As Scopes
-* Chapter 4: Hoisting
-	* Chicken Or The Egg?
-	* The Compiler Strikes Again
-	* Functions First
-* Chapter 5: Scope Closures
-	* Enlightenment
-	* Nitty Gritty
-	* Now I Can See
-	* Loops + Closure
-	* Modules
-* Appendix A: Dynamic Scope
-* Appendix B: Polyfilling Block Scope
-* Appendix C: Lexical-this
-* Appendix D: Acknowledgments
+* [Foreword](#Foreword)
+* [Preface](#Preface)
+* [Chapter 1: What is Scope?](#Chapter-1:-What-is-Scope?)
+	* [Compiler Theory](##Compiler-Theory)
+	* [Understanding Scope](##Understanding-Scope)
+	* [Nested Scope](##Nested-Scope)
+	* [Errors](##Errors)
+* [Chapter 2: Lexical Scope](#Chapter-2:-Lexical-Scope)
+	* [Lex-time](##Lex-time)
+	* [Cheating Lexical](##Cheating-Lexical)
+* [Chapter 3: Function vs. Block Scope](#Chapter-3:-Function-vs.-Block-Scope)
+	* [Scope From Functions](##Scope-From-Functions)
+	* [Hiding In Plain Scope](##Hiding-In-Plain-Scope)
+	* [Functions As Scopes](##Functions-As-Scopes)
+	* [Blocks As Scopes](##Blocks-As-Scopes)
+* [Chapter 4: Hoisting](#Chapter-4:-Hoisting)
+	* [Chicken Or The Egg?](##Chicken-Or-The-Egg?)
+	* [The Compiler Strikes Again](##The-Compiler-Strikes-Again)
+	* [Functions First](##Functions-First)
+* [Chapter 5: Scope Closures](#Chapter-5:-Scope-Closures)
+	* [Enlightenment](##Enlightenment)
+	* [Nitty Gritty](##Nitty-Gritty)
+	* [Now I Can See](##Now-I-Can-See)
+	* [Loops + Closure](##Loops-+-Closure)
+	* [Modules](##Modules)
+* [Appendix A: Dynamic Scope](#Appendix-A:-Dynamic-Scope)
+* [Appendix B: Polyfilling Block Scope](#Appendix-B:-Polyfilling-Block-Scope)
+* [Appendix C: Lexical-this](#Appendix-C:-Lexical-this)
+* [Appendix D: Acknowledgments](#Appendix-D:-Acknowledgments)
 # You Don't Know JS: Scope & Closures
 # Chapter 1: What is Scope?
 
