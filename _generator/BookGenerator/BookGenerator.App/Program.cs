@@ -35,9 +35,9 @@ namespace BookGenerator.App
 
         private async Task GenerateBook(string bookFolder)
         {
-            var appDirectory = new DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory);
-            var projectFolder = appDirectory.ClosestParent("You-Dont-Know-JS");
-            var bookFolderFullPath = Path.Combine(projectFolder.FullName, bookFolder);
+            var appFolder = new DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory);
+            var projectFolderFullPath = appFolder.ClosestParent("You-Dont-Know-JS").FullName;
+            var bookFolderFullPath = Path.Combine(projectFolderFullPath, bookFolder);
 
             var filesInBookFolder = Directory.GetFiles(bookFolderFullPath, "*.md");
 
@@ -57,7 +57,7 @@ namespace BookGenerator.App
                 bookContent.Append(File.ReadAllText(bookFile.FullName));
             }
 
-            File.WriteAllText(Path.Combine(bookFolderFullPath, $"_{bookFolder}.md"), bookContent.ToString());
+            File.WriteAllText(Path.Combine(projectFolderFullPath, "_generated_books", $"_{bookFolder}.md"), bookContent.ToString());
         }
     }
 }
