@@ -14,9 +14,6 @@ namespace BookGenerator.App
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
-
-
             Task.Run(async () =>
             {
                 var bookGenerator = new BookGenerator();
