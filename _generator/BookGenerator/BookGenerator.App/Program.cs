@@ -36,7 +36,7 @@ namespace BookGenerator.App
         private async Task GenerateBook(string bookFolder)
         {
             var appDirectory = new DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory);
-            var projectFolder = appDirectory.ClosestParent("You-Dont-Know-JS2");
+            var projectFolder = appDirectory.ClosestParent("You-Dont-Know-JS");
             var bookFolderFullPath = Path.Combine(projectFolder.FullName, bookFolder);
 
             var filesInBookFolder = Directory.GetFiles(bookFolderFullPath, "*.md");
