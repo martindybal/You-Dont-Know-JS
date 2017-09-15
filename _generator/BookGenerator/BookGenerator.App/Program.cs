@@ -54,7 +54,14 @@ namespace BookGenerator.App
             var bookContent = new StringBuilder();
             foreach (var bookFile in bookFiles)
             {
-                bookContent.Append(File.ReadAllText(bookFile.FullName));
+                if (bookFile.Name == "toc.md")
+                {
+                    bookContent.Append(GenerateTableOfContent(bookFile));
+                }
+                else
+                {
+                    bookContent.Append(File.ReadAllText(bookFile.FullName));
+                }
             }
 
             var bookOutputFolderFullPath = Path.Combine(projectFolderFullPath, "_generated_books", bookFolder);
@@ -63,6 +70,26 @@ namespace BookGenerator.App
             CreateDirectoryIfNotExist(bookFullPath);
             SaveBook(bookFullPath, bookContent.ToString());
             CopyImagesToBookFolder(bookInputFolderFullPath, bookOutputFolderFullPath);
+        }
+
+        private static string GenerateTableOfContent(FileInfo bookFile)
+        {
+            var sb = new StringBuilder();
+            foreach (var line in File.ReadAllLines(bookFile.FullName))
+            {
+                var parts = line.Split('*');
+                if (parts.Length == 2)
+                {
+                    var indent = line.Count(ch => ch == '\t') + 1;
+                    sb.AppendLine($"{parts[0]}* [{parts[1].Trim()}]({new string('#', indent)}{parts[1].Trim().Replace(' ', '-')})");
+                }
+                else
+                {
+                    sb.AppendLine(line);
+                }
+            }
+
+            return sb.ToString();
         }
 
         private static void CreateDirectoryIfNotExist(string bookFullPath)
@@ -78,7 +105,7 @@ namespace BookGenerator.App
 
         private static void CopyImagesToBookFolder(string inputFolderFullPath, string outputFolderFullPath)
         {
-            var imageExtensions = new[] { ".png", ".jpg", ".jpeg"};
+            var imageExtensions = new[] { ".png", ".jpg", ".jpeg" };
 
             var imagesFilesInBookFolder = Directory.EnumerateFiles(inputFolderFullPath)
                 .Select(fileName => new FileInfo(fileName))
@@ -86,7 +113,7 @@ namespace BookGenerator.App
 
             foreach (var imageFile in imagesFilesInBookFolder)
             {
-                File.Copy(imageFile.FullName, Path.Combine(outputFolderFullPath, imageFile.Name));
+                File.Copy(imageFile.FullName, Path.Combine(outputFolderFullPath, imageFile.Name), true);
             }
         }
     }
