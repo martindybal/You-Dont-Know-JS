@@ -37,12 +37,12 @@ namespace BookGenerator.App
         {
             var appFolder = new DirectoryInfo(AppDomain.CurrentDomain.BaseDirectory);
             var projectFolderFullPath = appFolder.ClosestParent("You-Dont-Know-JS").FullName;
-            var bookFolderFullPath = Path.Combine(projectFolderFullPath, bookFolder);
+            var bookInputFolderFullPath = Path.Combine(projectFolderFullPath, bookFolder);
 
-            var filesInBookFolder = Directory.GetFiles(bookFolderFullPath, "*.md");
+            var mdFilesInBookFolder = Directory.GetFiles(bookInputFolderFullPath, "*.md");
 
             //==false is a small hack, because false (0) is before true (1) and this is not desirable in this case.
-            var bookFiles = filesInBookFolder.Select(fileName => new FileInfo(fileName))
+            var bookFiles = mdFilesInBookFolder.Select(fileName => new FileInfo(fileName))
                                              .OrderBy(f => f.Name == "README.md" == false)
                                              .ThenBy(f => f.Name == "toc.md" == false)
                                              .ThenBy(f => f.Name.StartsWith("ch") == false)
@@ -57,7 +57,20 @@ namespace BookGenerator.App
                 bookContent.Append(File.ReadAllText(bookFile.FullName));
             }
 
-            File.WriteAllText(Path.Combine(projectFolderFullPath, "_generated_books", $"_{bookFolder}.md"), bookContent.ToString());
+            var bookOutputFolderFullPath = Path.Combine(projectFolderFullPath, "_generated_books", bookFolder);
+            var bookFullPath = Path.Combine(bookOutputFolderFullPath, $"_{bookFolder}.md");
+            File.WriteAllText(bookFullPath, bookContent.ToString());
+
+            var imagesFilesInBookFolder = Directory.EnumerateFiles(bookInputFolderFullPath)
+                                                   .Select(fileName => new FileInfo(fileName))
+                                                   .Where(file => file.Extension == "png" ||
+                                                                  file.Extension == "jpg" ||
+                                                                  file.Extension == "jpeg");
+
+            foreach (var imageFile in imagesFilesInBookFolder)
+            {
+                File.Copy(imageFile.FullName, Path.Combine(bookInputFolderFullPath, imageFile.Name));
+            }
         }
     }
 }
