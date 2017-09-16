@@ -80,7 +80,7 @@ namespace BookGenerator.App
                 var parts = line.Split('*');
                 if (parts.Length == 2)
                 {
-                    sb.AppendLine($"{parts[0]}* [{parts[1].Trim()}](#{parts[1].Trim().ToLower().Replace(' ', '-')})");
+                    sb.AppendLine($"{parts[0]}* [{parts[1].Trim()}](#{parts[1].Trim().ToLower().Replace(":", string.Empty).Replace(' ', '-')})");
                 }
                 else
                 {
