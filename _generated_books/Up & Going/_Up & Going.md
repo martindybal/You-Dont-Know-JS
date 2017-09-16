@@ -22,7 +22,7 @@
 
 * [Foreword](#foreword)
 * [Preface](#preface)
-* [Chapter 1: Into Programming](#chapter-1:-into-programming)
+* [Chapter 1: Into Programming](#chapter-1-into-programming)
 	* [Code](#code)
 	* [Try It Yourself](#try-it-yourself)
 	* [Operators](#operators)
@@ -34,7 +34,7 @@
 	* [Loops](#loops)
 	* [Functions](#functions)
 	* [Practice](#practice)
-* [Chapter 2: Into JavaScript](#chapter-2:-into-javascript)
+* [Chapter 2: Into JavaScript](#chapter-2-into-javascript)
 	* [Values & Types](#values-&-types)
 	* [Variables](#variables)
 	* [Conditionals](#conditionals)
@@ -44,13 +44,13 @@
 	* [Prototypes](#prototypes)
 	* [Old & New](#old-&-new)
 	* [Non-JavaScript](#non-javascript)
-* [Chapter 3: Into YDKJS](#chapter-3:-into-ydkjs)
+* [Chapter 3: Into YDKJS](#chapter-3-into-ydkjs)
 	* [Scope & Closures](#scope-&-closures)
 	* [this & Object Prototypes](#this-&-object-prototypes)
 	* [Types & Grammar](#types-&-grammar)
 	* [Async & Performance](#async-&-performance)
 	* [ES6 & Beyond](#es6-&-beyond)
-* [Appendix A: Acknowledgments](#appendix-a:-acknowledgments)
+* [Appendix A: Acknowledgments](#appendix-a-acknowledgments)
 # You Don't Know JS: Up & Going
 # Chapter 1: Into Programming
 
