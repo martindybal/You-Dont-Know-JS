@@ -40,7 +40,7 @@
 	* [Trust Issues](#trust-issues)
 	* [Trying To Save Callbacks](#trying-to-save-callbacks)
 * [Chapter 3: Promises](#chapter-3-promises)
-	* [What is a Promise?](#what-is-a-promise?)
+	* [What is a Promise?](#what-is-a-promise)
 	* [Thenable Duck-Typing](#thenable-duck-typing)
 	* [Promise Trust](#promise-trust)
 	* [Chain Flow](#chain-flow)

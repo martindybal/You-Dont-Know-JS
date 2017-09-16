@@ -27,7 +27,7 @@
 
 * [Foreword](#foreword)
 * [Preface](#preface)
-* [Chapter 1: ES? Now & Future](#chapter-1-es?-now-&-future)
+* [Chapter 1: ES? Now & Future](#chapter-1-es-now-&-future)
 	* [Versioning](#versioning)
 	* [Transpiling](#transpiling)
 * [Chapter 2: Syntax](#chapter-2-syntax)

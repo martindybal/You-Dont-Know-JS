@@ -26,10 +26,10 @@
 
 * [Foreword](#foreword)
 * [Preface](#preface)
-* [Chapter 1: `this` Or That?](#chapter-1-`this`-or-that?)
-	* [Why `this`?](#why-`this`?)
+* [Chapter 1: `this` Or That?](#chapter-1-`this`-or-that)
+	* [Why `this`?](#why-`this`)
 	* [Confusions](#confusions)
-	* [What's `this`?](#what's-`this`?)
+	* [What's `this`?](#what's-`this`)
 * [Chapter 2: `this` All Makes Sense Now!](#chapter-2-`this`-all-makes-sense-now!)
 	* [Call-site](#call-site)
 	* [Nothing But Rules](#nothing-but-rules)

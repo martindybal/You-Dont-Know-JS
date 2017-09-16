@@ -27,7 +27,7 @@
 
 * [Foreword](#foreword)
 * [Preface](#preface)
-* [Chapter 1: What is Scope?](#chapter-1-what-is-scope?)
+* [Chapter 1: What is Scope?](#chapter-1-what-is-scope)
 	* [Compiler Theory](#compiler-theory)
 	* [Understanding Scope](#understanding-scope)
 	* [Nested Scope](#nested-scope)
@@ -41,7 +41,7 @@
 	* [Functions As Scopes](#functions-as-scopes)
 	* [Blocks As Scopes](#blocks-as-scopes)
 * [Chapter 4: Hoisting](#chapter-4-hoisting)
-	* [Chicken Or The Egg?](#chicken-or-the-egg?)
+	* [Chicken Or The Egg?](#chicken-or-the-egg)
 	* [The Compiler Strikes Again](#the-compiler-strikes-again)
 	* [Functions First](#functions-first)
 * [Chapter 5: Scope Closures](#chapter-5-scope-closures)
