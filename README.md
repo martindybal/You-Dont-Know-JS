@@ -30,7 +30,7 @@ If you like the content you find here, and want to support more content like it,
 
 If you'd like to contribute financially towards the effort (or any of my other OSS work) aside from purchasing the books, I do have a [patreon](https://www.patreon.com/getify) that I would always appreciate your generosity towards.
 
-<a href="https://www.patreon.com/getify">[![patreon.png](https://s11.postimg.org/axpzguh77/patreon.png)](https://www.patreon.com/getify)</a>
+<a href="https://www.patreon.com/getify">[![patreon.png](https://c5.patreon.com/external/logo/become_a_patron_button.png)](https://www.patreon.com/getify)</a>
 
 ## In-person Training
 
@@ -52,6 +52,6 @@ But **PLEASE** read the [Contributions Guidelines](CONTRIBUTING.md) carefully be
 
 ## License & Copyright
 
-The materials herein are all (c) 2013-2017 Kyle Simpson.
+The materials herein are all &copy; 2013-2018 Kyle Simpson.
 
 <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/"><img alt="Creative Commons License" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/4.0/">Creative Commons Attribution-NonCommercial-NoDerivs 4.0 Unported License</a>.
