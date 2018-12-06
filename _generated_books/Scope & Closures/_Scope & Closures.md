@@ -73,7 +73,7 @@ It may be self-evident, or it may be surprising, depending on your level of inte
 
 But, nevertheless, the JavaScript engine performs many of the same steps, albeit in more sophisticated ways than we may commonly be aware, of any traditional language-compiler.
 
-In traditional compiled-language process, a chunk of source code, your program, will undergo typically three steps *before* it is executed, roughly called "compilation":
+In a traditional compiled-language process, a chunk of source code, your program, will undergo typically three steps *before* it is executed, roughly called "compilation":
 
 1. **Tokenizing/Lexing:** breaking up a string of characters into meaningful (to the language) chunks, called tokens. For instance, consider the program: `var a = 2;`. This program would likely be broken up into the following tokens: `var`, `a`, `=`, `2`, and `;`. Whitespace may or may not be persisted as a token, depending on whether it's meaningful or not.
 
@@ -717,7 +717,7 @@ The assignment inside `bar(..)` needs to declare a local variable to use, regard
 
 A particularly strong example of (likely) variable collision occurs in the global scope. Multiple libraries loaded into your program can quite easily collide with each other if they don't properly hide their internal/private functions and variables.
 
-Such libraries typically will create a single variable declaration, often an object, with a sufficiently unique name, in the global scope. This object is then used as a "namespace" for that library, where all specific exposures of functionality are made as properties off that object (namespace), rather than as top-level lexically scoped identifiers themselves.
+Such libraries typically will create a single variable declaration, often an object, with a sufficiently unique name, in the global scope. This object is then used as a "namespace" for that library, where all specific exposures of functionality are made as properties of that object (namespace), rather than as top-level lexically scoped identifiers themselves.
 
 For example:
 
@@ -2193,7 +2193,7 @@ Secondly, IIFE is not a fair apples-to-apples comparison with `try/catch`, becau
 
 The question really becomes: do you want block-scoping, or not. If you do, these tools provide you that option. If not, keep using `var` and go on about your coding!
 
-[^note-traceur]: [Google Traceur](http://traceur-compiler.googlecode.com/git/demo/repl.html)
+[^note-traceur]: [Google Traceur](http://google.github.io/traceur-compiler/demo/repl.html)
 
 [^note-let_er]\: [let-er](https://github.com/getify/let-er)
 # You Don't Know JS: Scope & Closures
