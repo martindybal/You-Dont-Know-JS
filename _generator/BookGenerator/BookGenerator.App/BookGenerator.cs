@@ -26,8 +26,8 @@ namespace BookGenerator.App
 
             //==false is a small hack, because false (0) is before true (1) and this is not desirable in this case.
             var bookFiles = mdFilesInBookFolder.Select(fileName => new FileInfo(fileName))
-                    .OrderBy(f => f.Name == "README.md" == false)
-                    .ThenBy(f => f.Name == "toc.md" == false)
+                    .Where(f => f.Name != "README.md")
+                    .OrderBy(f => f.Name == "toc.md" == false)
                     .ThenBy(f => f.Name.StartsWith("ch") == false)
                     .ThenBy(f => f.Name.StartsWith("Ap") == false)
                     .ThenBy(f => f.Name == "foreword.md" == false)
